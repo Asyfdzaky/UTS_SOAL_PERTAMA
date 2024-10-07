@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/imgInsta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/instagram_logo"
+            tools:ignore="MissingConstraints">
+        </ImageView>
+        <ImageView
+            android:id="@+id/imgLove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"
+            tools:ignore="MissingConstraints">
+        </ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_heart"
+            app:layout_constraintEnd_toStartOf="@id/imgLove"
+            android:layout_marginEnd="20dp"
+            tools:ignore="MissingConstraints">
+        </ImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/top"
+>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/top2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/Foto1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/user_story"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="10dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cerita Anda"
+                    android:textSize="11sp"
+                    app:layout_constraintTop_toBottomOf="@id/Foto1"
+                    app:layout_constraintStart_toStartOf="@id/Foto1"
+                    app:layout_constraintEnd_toEndOf="@id/Foto1"
+                    />
+
+                <ImageView
+                    android:id="@+id/Foto2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_constraintStart_toEndOf="@id/Foto1"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/asset_story"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asset"
+                    android:textSize="11sp"
+                    app:layout_constraintTop_toBottomOf="@id/Foto2"
+                    app:layout_constraintStart_toStartOf="@id/Foto2"
+                    app:layout_constraintEnd_toEndOf="@id/Foto2"
+                  />
+
+                <ImageView
+                    android:id="@+id/Foto3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_constraintStart_toEndOf="@id/Foto2"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/liga_story"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liga"
+                    android:textSize="11sp"
+                    app:layout_constraintTop_toBottomOf="@id/Foto3"
+                    app:layout_constraintStart_toStartOf="@id/Foto3"
+                    app:layout_constraintEnd_toEndOf="@id/Foto3"
+                    />
+
+                <ImageView
+                    android:id="@+id/Foto4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_constraintStart_toEndOf="@id/Foto3"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/asset_story"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asset"
+                    android:textSize="11sp"
+                    app:layout_constraintTop_toBottomOf="@id/Foto4"
+                    app:layout_constraintStart_toStartOf="@id/Foto4"
+                    app:layout_constraintEnd_toEndOf="@id/Foto4"
+                     />
+
+                <ImageView
+                    android:id="@+id/Foto5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_constraintStart_toEndOf="@id/Foto4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/liga_story"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liga"
+                    android:textSize="11sp"
+                    app:layout_constraintTop_toBottomOf="@id/Foto5"
+                    app:layout_constraintStart_toStartOf="@id/Foto5"
+                    app:layout_constraintEnd_toEndOf="@id/Foto5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/top3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/top2">
+
+                <ImageView
+                    android:id="@+id/ppMulyono"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/fufufafa_pp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="10dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/TextPP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fufufafa"
+                    app:layout_constraintStart_toEndOf="@id/ppMulyono"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Putra Mulyono"
+                    app:layout_constraintTop_toBottomOf="@id/TextPP"
+                    app:layout_constraintStart_toStartOf="@id/TextPP"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_titik_tiga"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ppMulyono"
+                    app:layout_constraintBottom_toBottomOf="@id/ppMulyono"
+                    android:layout_marginEnd="5dp"
+                    />
+                <ImageView
+                    android:id="@+id/PostFufufa"
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/post_fufufafa"
+                    app:layout_constraintTop_toBottomOf="@id/ppMulyono"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:id="@+id/like_button0"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_heart"
+                    android:contentDescription="Like Button"
+                    app:layout_constraintTop_toBottomOf="@id/PostFufufa"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/comment_button0"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_comment"
+                    android:contentDescription="Comment Button"
+                    app:layout_constraintTop_toBottomOf="@id/PostFufufa"
+                    app:layout_constraintStart_toEndOf="@id/like_button0"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/share_button0"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_share"
+                    android:contentDescription="Share Button"
+                    app:layout_constraintTop_toBottomOf="@id/PostFufufa"
+                    app:layout_constraintStart_toEndOf="@id/comment_button0"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/bookmark_button0"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_bookmark"
+                    android:contentDescription="Bookmark Button"
+                    app:layout_constraintTop_toBottomOf="@id/PostFufufa"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textDesription0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disukai oleh Ikhwan_Hanif"
+                    app:layout_constraintTop_toBottomOf="@id/like_button0"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/Hastag0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fufufafa"
+                    app:layout_constraintTop_toBottomOf="@id/textDesription0"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/fufufaText0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#Proud"
+                    app:layout_constraintStart_toEndOf="@id/Hastag0"
+                    app:layout_constraintTop_toBottomOf="@id/textDesription0"
+                    android:textSize="10sp"
+                    android:textColor="#3EA9E5"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/Komen0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tampilkan 10 komentar dan lainya"
+                    app:layout_constraintTop_toBottomOf="@id/Hastag0"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#52000000"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Top4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/top3">
+                <ImageView
+                    android:id="@+id/ppAsset"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/assets_ugm_pp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="10dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/TextPPAsset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asset"
+                    app:layout_constraintStart_toEndOf="@id/ppAsset"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sekolah Vokasi Universitas Gadjah Mada"
+                    app:layout_constraintTop_toBottomOf="@id/TextPPAsset"
+                    app:layout_constraintStart_toStartOf="@id/TextPPAsset"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_titik_tiga"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ppAsset"
+                    app:layout_constraintBottom_toBottomOf="@id/ppAsset"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/PostAsset"
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/post_asset"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ppAsset" />
+
+                <ImageView
+                    android:id="@+id/like_button1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_heart"
+                    android:contentDescription="Like Button"
+                    app:layout_constraintTop_toBottomOf="@id/PostAsset"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/comment_button1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_comment"
+                    android:contentDescription="Comment Button"
+                    app:layout_constraintTop_toBottomOf="@id/PostAsset"
+                    app:layout_constraintStart_toEndOf="@id/like_button1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/share_button1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_share"
+                    android:contentDescription="Share Button"
+                    app:layout_constraintTop_toBottomOf="@id/PostAsset"
+                    app:layout_constraintStart_toEndOf="@id/comment_button1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/bookmark_button1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_bookmark"
+                    android:contentDescription="Bookmark Button"
+                    app:layout_constraintTop_toBottomOf="@id/PostAsset"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textDesription1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disukai oleh Ikhwan_Hanif"
+                    app:layout_constraintTop_toBottomOf="@id/like_button1"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/Hastag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asset UGM"
+                    app:layout_constraintTop_toBottomOf="@id/textDesription1"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#Proud"
+                    app:layout_constraintStart_toEndOf="@id/Hastag1"
+                    app:layout_constraintTop_toBottomOf="@id/textDesription1"
+                    android:textSize="10sp"
+                    android:textColor="#3EA9E5"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/Komen1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tampilkan 10 komentar dan lainya"
+                    app:layout_constraintTop_toBottomOf="@id/Hastag1"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#52000000"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/top5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/Top4">
+                <ImageView
+                    android:id="@+id/ppLiga"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/liga_trpl_pp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="10dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/TextPPLiga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liga TRPL"
+                    app:layout_constraintStart_toEndOf="@id/ppLiga"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menyambut Liga TRPL"
+                    app:layout_constraintTop_toBottomOf="@id/TextPPLiga"
+                    app:layout_constraintStart_toStartOf="@id/TextPPLiga"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_titik_tiga"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ppLiga"
+                    app:layout_constraintBottom_toBottomOf="@id/ppLiga"
+                    android:layout_marginEnd="5dp"
+                    />
+                <ImageView
+                    android:id="@+id/PostLiga"
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/post_liga"
+                    app:layout_constraintTop_toBottomOf="@id/ppLiga"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:id="@+id/like_button2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_heart"
+                    android:contentDescription="Like Button"
+                    app:layout_constraintTop_toBottomOf="@id/PostLiga"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/comment_button2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_comment"
+                    android:contentDescription="Comment Button"
+                    app:layout_constraintTop_toBottomOf="@id/PostLiga"
+                    app:layout_constraintStart_toEndOf="@id/like_button2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/share_button2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_share"
+                    android:contentDescription="Share Button"
+                    app:layout_constraintTop_toBottomOf="@id/PostLiga"
+                    app:layout_constraintStart_toEndOf="@id/comment_button2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/bookmark_button2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_bookmark"
+                    android:contentDescription="Bookmark Button"
+                    app:layout_constraintTop_toBottomOf="@id/PostLiga"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textDesription2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disukai oleh Ikhwan_Hanif"
+                    app:layout_constraintTop_toBottomOf="@id/like_button2"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/Hastag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liga TRPL"
+                    app:layout_constraintTop_toBottomOf="@id/textDesription2"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#Proud"
+                    app:layout_constraintStart_toEndOf="@id/Hastag2"
+                    app:layout_constraintTop_toBottomOf="@id/textDesription2"
+                    android:textSize="10sp"
+                    android:textColor="#3EA9E5"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/Komen2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tampilkan 10 komentar dan lainya"
+                    app:layout_constraintTop_toBottomOf="@id/Hastag2"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#52000000"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/white"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/homeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home"
+                    android:padding="10dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/searchIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search"
+                    android:padding="10dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/addIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_upload"
+                    android:padding="10dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/videoIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_reels"
+                    android:padding="10dp"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:id="@+id/profileButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                />
+            </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
